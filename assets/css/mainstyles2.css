@@ -1,0 +1,69 @@
+/* Declaracion de variables CSS */
+:root {
+  --btn-color-1: #f44336;
+  --btn-color-2: #039be5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-rows: 20% 30% 30% 20%;
+}
+
+header {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  /* background-color: cornflowerblue; */
+}
+
+.hero {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.hero-container .hero-title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.hero .hero-container .hero-image {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+.hero .hero-container .hero-image img {
+  width: 40vw;
+  /* height: 60vh; */
+}
+
+footer {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.footer-msg h2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.socialLinks {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  display: flex;
+}
+
+.socialLinks img {
+  height: 5vh;
+}
