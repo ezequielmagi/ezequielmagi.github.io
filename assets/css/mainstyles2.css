@@ -20,50 +20,115 @@ header {
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 2;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 7vh;
+  align-items: center;
   /* background-color: cornflowerblue; */
 }
 
-.hero {
-  display: grid;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-start: 2;
-  grid-row-end: 4;
+header h1{
+  font-size: 2.5rem;
+  
 }
 
-.hero-container .hero-title {
+header .header-nav ul{ 
+  display: flex;
+  justify-content: space-around;
+  margin-right: -60px;
+  /* margin: 0 20px; */
+ 
+}
+
+header .header-nav ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+
+header .header-nav ul li a{
+  text-decoration: none;
+  /* border: solid 1px red; */
+  border-radius: 25px;
+  padding: 15px 20px;
+  color: white;
+}
+
+#login {
+  background-color: #f44336;
+}
+#signin {
+  background-color: #039be5;
+}
+
+/***********estilos del MAIN**************/
+main {
+  width: 80vw;
+  height: 78vh;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
   grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 6;
   grid-row-start: 2;
   grid-row-end: 4;
+
+  background-image: url(../img/invertheroimage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 0% 0%; */
 }
-.hero .hero-container .hero-image {
-  grid-column-start: 5;
-  grid-column-end: 6;
+
+main .hero-title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 1.5rem;
+  margin-top: 5%;
+
+ 
 }
-.hero .hero-container .hero-image img {
-  width: 40vw;
-  /* height: 60vh; */
-}
+
+
+/**********************************/
 
 footer {
-  grid-column-start: 2;
-  grid-column-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 7;
   grid-row-start: 4;
   grid-row-end: 5;
+  display: flex;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+  background-color: #f44336;
+}
+
+footer .footer-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+ 
+  grid-column-start: 2;
+  grid-column-end: 6;
 }
 .footer-msg h2 {
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
-.socialLinks {
-  grid-column-start: 3;
-  grid-column-end: 5;
+footer .footer-container .socialLinks {
+  
   display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  margin: 0 5px;
 }
 
-.socialLinks img {
+footer .footer-container .socialLinks img {
   height: 5vh;
+}
+
+footer .footer-container .dedicatoria{
+  margin: auto 0;
 }
