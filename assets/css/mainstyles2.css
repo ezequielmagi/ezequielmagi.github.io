@@ -62,11 +62,23 @@ header .header-nav ul li a{
 
 /***********estilos del MAIN**************/
 main {
- 
+ height: 78vh;
+ width: 100%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ justify-content: center;
 }
 
+main .hero-title{
+  grid-row: 1;
+}
 
-
+main img{
+  grid-column: 2;
+  grid-row: 2;
+  align-items: center;
+}
 
 /**********************************/
 
@@ -111,3 +123,4 @@ footer .footer-container .socialLinks img {
 footer .footer-container .dedicatoria{
   margin: auto 0;
 }
+
