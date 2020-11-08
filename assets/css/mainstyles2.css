@@ -91,7 +91,7 @@ main img {
 .comoFuncionabtn #comoFunciona {
   background-color: var(--btn-color-1);
   color: white;
-
+  /* font-size: 2rem; */
   padding: 30px;
   border-radius: 50px;
 }
