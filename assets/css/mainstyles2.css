@@ -16,7 +16,6 @@
 }
 
 header {
-  /* padding-top: 20px; */
   grid-column-start: 2;
   grid-column-end: 6;
   grid-row-start: 1;
@@ -37,7 +36,6 @@ header .header-nav ul {
   display: flex;
   justify-content: space-around;
   margin-right: -60px;
-  /* margin: 0 20px; */
 }
 
 header .header-nav ul li {
@@ -47,7 +45,7 @@ header .header-nav ul li {
 
 header .header-nav ul li a {
   text-decoration: none;
-  /* border: solid 1px red; */
+
   border-radius: 25px;
   padding: 15px 20px;
   color: white;
@@ -81,12 +79,10 @@ main .hero-title {
 }
 
 main img {
-  grid-column-start: 2;
-  grid-column-end: 3;
   width: 60vw;
-  align-content: flex-end;
-  justify-self: end;
-  align-self: flex-end;
+
+  position: fixed;
+  z-index: -1;
 }
 
 .comoFuncionabtn #comoFunciona {
@@ -95,6 +91,8 @@ main img {
   /* font-size: 2rem; */
   padding: 30px;
   border-radius: 50px;
+  position: absolute;
+  z-index: 1;
 }
 
 /**********************************/
@@ -115,13 +113,8 @@ footer .footer-container {
   width: 100%;
   display: flex;
   justify-content: space-around;
-
-  grid-column-start: 2;
-  grid-column-end: 6;
 }
 .footer-msg h2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
 }
 
 footer .footer-container .socialLinks {
