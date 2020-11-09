@@ -55,7 +55,7 @@ header .header-nav ul li a {
 }
 
 #login {
-  background-color: #f44336;
+  background-color: #1bb8c1;
   position: absolute;
   top: 2rem;
   right: 10rem;
@@ -126,7 +126,7 @@ footer {
   align-items: center;
   height: 15vh;
   width: 100%;
-  background-color: #f44336;
+  background-color: #ffa548;
 }
 
 footer .footer-container {
