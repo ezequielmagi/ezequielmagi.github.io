@@ -18,18 +18,21 @@
 header {
   grid-column-start: 2;
   grid-column-end: 6;
+  height: 7vh;
+  /*
   grid-row-start: 1;
   grid-row-end: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 7vh;
   align-items: center;
-  /* background-color: cornflowerblue; */
+  background-color: cornflowerblue; */
 }
 
 header h1 {
   font-size: 2.5rem;
   color: #f44336;
+  position: absolute;
+  top: 2rem;
 }
 
 header .header-nav ul {
@@ -40,7 +43,7 @@ header .header-nav ul {
 
 header .header-nav ul li {
   list-style: none;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 header .header-nav ul li a {
@@ -53,9 +56,17 @@ header .header-nav ul li a {
 
 #login {
   background-color: #f44336;
+  position: absolute;
+  top: 2rem;
+  right: 10rem;
+  font-size: 1.5rem;
 }
 #signin {
   background-color: #039be5;
+  position: absolute;
+  top: 2rem;
+  right: 25rem;
+  font-size: 1.5rem;
 }
 
 /***********estilos del MAIN**************/
@@ -65,23 +76,27 @@ main {
   grid-column-end: 6;
   height: 78vh;
 
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
 }
 
 main .hero-title {
   grid-column-start: 1;
   grid-column-end: 3;
-  width: 100%;
-  padding: 30px 0px;
+  width: 80%;
+  /* padding: 30px 0px; */
   font-size: 1.5rem;
   margin-bottom: 15px;
+  position: absolute;
+  top: 6rem;
 }
 
 main img {
-  width: 60vw;
+  width: 70%;
 
-  position: fixed;
+  position: absolute;
+  right: 10%;
+  bottom: 1em;
   z-index: -1;
 }
 
@@ -91,10 +106,15 @@ main img {
   /* font-size: 2rem; */
   padding: 30px;
   border-radius: 50px;
-  position: absolute;
+  position: fixed;
   z-index: 1;
+  position: absolute;
+  top: 14rem;
 }
-
+main a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
 /**********************************/
 
 footer {
@@ -113,8 +133,6 @@ footer .footer-container {
   width: 100%;
   display: flex;
   justify-content: space-around;
-}
-.footer-msg h2 {
 }
 
 footer .footer-container .socialLinks {
