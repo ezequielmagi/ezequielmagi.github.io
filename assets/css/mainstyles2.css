@@ -9,23 +9,23 @@
   box-sizing: border-box;
 }
 
+.sidebar{
+  display: none;
+}
+
+
 .main-container {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% 10%;
   grid-template-rows: 20% 30% 30% 20%;
+  max-height: 100%;
 }
 
 header {
   grid-column-start: 2;
   grid-column-end: 6;
   height: 7vh;
-  /*
-  grid-row-start: 1;
-  grid-row-end: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  background-color: cornflowerblue; */
+
 }
 
 header h1 {
@@ -76,15 +76,14 @@ main {
   grid-column-end: 6;
   height: 78vh;
 
-  /* display: grid;
-  grid-template-columns: 1fr 2fr; */
+  
 }
 
 main .hero-title {
   grid-column-start: 1;
   grid-column-end: 3;
   width: 80%;
-  /* padding: 30px 0px; */
+  
   font-size: 1.5rem;
   margin-bottom: 15px;
   position: absolute;
@@ -103,7 +102,7 @@ main img {
 .comoFuncionabtn #comoFunciona {
   background-color: var(--btn-color-1);
   color: white;
-  /* font-size: 2rem; */
+  
   padding: 30px;
   border-radius: 50px;
   position: fixed;
@@ -149,3 +148,62 @@ footer .footer-container .socialLinks img {
 footer .footer-container .dedicatoria {
   margin: auto 0;
 }
+
+
+/********************medias querysssss****************/
+
+@media (max-width: 768px) {
+ 
+  header{
+    /* background-color: #1bb8c1; */
+  }
+
+  #login, #signin{
+    display: none;
+  }
+
+  #sidebar{
+    display: block;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #151719;
+    /* top: 7vh */
+    z-index: 5;
+    left: -200px;
+    transition: all 500ms linear;
+    
+  }
+
+
+  #sidebar.active  {
+    left: 0;
+  }
+
+  #sidebar ul li{
+    color: rgba(230, 230, 230, .9);
+    text-align: center;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    padding: 15px 10px;
+    list-style: none;
+  }
+
+  #sidebar .toggle-btn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 5;
+    color: rgba(189, 26, 26, 0.9);
+    
+  }
+
+  #sidebar .toggle-btn span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgb(129, 198, 98);
+  }
+
+  }
