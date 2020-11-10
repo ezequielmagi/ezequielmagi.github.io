@@ -154,9 +154,7 @@ footer .footer-container .dedicatoria {
 
 @media (max-width: 768px) {
  
-  header{
-    /* background-color: #1bb8c1; */
-  }
+  
 
   #login, #signin{
     display: none;
