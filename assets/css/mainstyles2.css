@@ -128,21 +128,28 @@ footer {
   background-color: #ffa548;
 }
 
-footer .footer-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+footer .footer-msg{
+  text-align: center;
+  
 }
 
-footer .footer-container .socialLinks {
+footer .footer-container {
+  width: 80%;
+  grid-column-start: 2;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 20vw;
-  margin: 0 5px;
+  
+}
+
+footer .footer-container  .socialLinks a{
+  margin: 0 10px;
+ 
+  
 }
 
 footer .footer-container .socialLinks img {
-  height: 5vh;
+  height: 4vh;
 }
 
 footer .footer-container .dedicatoria {
@@ -263,13 +270,16 @@ footer .footer-container .dedicatoria {
     grid-row: 1;
   }
 
-  footer .socialLinks a{
+  footer .footer-container .socialLinks {
     grid-row: 2;
+    width: 100%;
+    
+
   }
   
   footer .socialLinks--img{
-    margin: 0 8px;
-
+    margin: 0 ;
+    
   }
 
   footer .dedicatoria{
@@ -278,5 +288,25 @@ footer .footer-container .dedicatoria {
   }
 
   @media (max-width: 768px){
-    
+    header h1{
+      font-size: 2rem;
+    }
+    main .hero-title{
+      font-size: 1rem;
+    }
+
+    main img{
+      margin: auto;
+      width: 90vw;
+      right: 5%;
+    }
+
+    footer .footer-msg{
+      font-size: 0.5rem;
+    }
+
+    footer .socialLinks{
+      display: flex;
+      justify-content: space-between;
+    }
   }
