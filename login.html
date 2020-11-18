@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lalala lalala</title>
+    <title>Inicia sesion</title>
 
-    <link rel="stylesheet" href="./assets/css/mainstyles2.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
   </head>
   <body>
    <section class="main-container">
@@ -19,7 +19,7 @@
         <ul>
           <!-- <li>logo</li> -->
           <li><a href="./login.html">Iniciar sesion</a></li>
-          <li><a href="./registro.html">Registrate!</a></li>
+          <li><a href="./registro.html"> Registrate!</a></li>
           <li>Como funciona?</li>
           
         </ul>
@@ -35,29 +35,44 @@
     <!-- HEADER -->
     <header>
       
-          <h1>La Lalala</h1>
+          <!-- <h1>La Lalala</h1>
         
         <div class="header-nav">
           <ul>
-            <li><a href="./login.html" id="login">Iniciar Sesión</a></li>
-            <li><a href="./registro.html" id="signin">Regístrate ya!</a></li>
+            <li><a href="#login" id="login">Iniciar Sesión</a></li>
+            <li><a href="#signin" id="signin">Regístrate ya!</a></li>
           </ul>
-        </div>
+        </div> -->
     </header>
     <!-- END OF HEADER -->
     <!-- MAIN -->
     <main>
 
-        
-        <div class="hero-title">
-          <h1>Lal laaala alalala lalalalaallallaa... </h1>
-          <h1>la la lalala lalalalaa!! </h1 >
+      <div class="mainContainer">
+        <div class="loginContainer">
+          <div class="loginContainerBody">
+              <h1>Inicia sesion!</h1>
+              <form action="">
+                <label for="userName" >Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre" id="userName">
+                <label for="userLastName" >Apellido</label>
+                <input type="text" placeholder="Ingrese su apellido" id="userLastName">
+                <label for="userEmail" >Correo electónico</label>
+                <input type="email" placeholder="Ingrese su correo electronico" id="userEmail">
+                <button type="submit">Iniciar sesion!</button>
+              </form>
+              <div class="socialNetworkRegister">
+                <h1>Inicia sesion con tus redes!</h1>
+                <a href=""><img src="./assets/img/facebook.png" alt=""> </a>
+                <a href=""><img src="./assets/img/twitter.png" alt=""> </a>
+              </div>
+            </div>
+            
+          </div>
+          <figure><img src="./assets/img/login-img.png" alt=""></figure>
         </div>
-              <div class="comoFuncionabtn">
-                <a href="#comoFunciona" id="comoFunciona">Como funciona?</a>
-               </div>
-
-       <img src="assets/img/invertheroimage.png" alt="imagen principal">
+        
+       
     </main>
     <!-- END OF MAIN -->
     <!-- FOOTER -->
