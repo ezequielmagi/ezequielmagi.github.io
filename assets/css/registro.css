@@ -519,8 +519,10 @@ main .registerContainer form{
   display: flex;
   flex-direction: column;
   
-  width: 80vw;
-  margin: 0 auto;
+  width: 75vw;
+  margin: 15px auto;
+  padding-top: 20px;
+  
  
 }
 
@@ -540,7 +542,7 @@ main .registerContainer form label{
 main .registerContainer form input{
   color: blueviolet;
   margin: 3px 10px;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 main .registerContainer form button{
@@ -552,8 +554,12 @@ main .registerContainer form button{
 main .socialNetworkRegister{
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 30px;
 }
 
+main .socialNetworkRegister h1{
+  font-size: 1rem;
+}
 
 main .registerContainerBody{
   margin: auto;
@@ -565,7 +571,8 @@ main .socialNetworkRegister img{
   border-radius: 50%;
   border: solid 2px white;
   object-fit: cover;
-;
+  
+
   
 }
 
