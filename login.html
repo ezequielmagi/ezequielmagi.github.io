@@ -53,13 +53,12 @@
         <div class="loginContainer">
           <div class="loginContainerBody">
               <h1>Inicia sesion!</h1>
-              <form action="">
-                <label for="userName" >Nombre</label>
-                <input type="text" placeholder="Ingrese su nombre" id="userName">
-                <label for="userLastName" >Apellido</label>
-                <input type="text" placeholder="Ingrese su apellido" id="userLastName">
+              <form action="" id="loginForm">
+                
                 <label for="userEmail" >Correo electónico</label>
-                <input type="email" placeholder="Ingrese su correo electronico" id="userEmail">
+                <input type="email" placeholder="Ingrese su correo electronico" id="loginEmail">
+                <label for="userPassword">Password</label>
+                <input type="password" placeholder="Ingrese su contraseña" id="loginPassword">
                 <button type="submit">Iniciar sesion!</button>
               </form>
               <div class="socialNetworkRegister">
@@ -94,12 +93,36 @@
           Hecho con &#128147
         </div>
       </div>
+    </section>
       
     </footer>
     
     <!-- END OF FOOTER -->
-   </section>
-   <script src="./assets/js/sidebar.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB1QzpAJQWjL3kIrzbLy6PfOnuNGlnzaWA",
+    authDomain: "beatrice-8a911.firebaseapp.com",
+    projectId: "beatrice-8a911",
+    storageBucket: "beatrice-8a911.appspot.com",
+    messagingSenderId: "319839211268",
+    appId: "1:319839211268:web:024014a17c34b3c3bd8a51"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth()
+</script>
+
+  <script src="./assets/js/sidebar.js"></script>
+  <script src="./assets/js/login.js"></script>
   </body>
 </html>
 

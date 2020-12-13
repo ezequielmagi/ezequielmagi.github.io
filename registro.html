@@ -54,13 +54,14 @@
           <div class="registerContainer">
              <div class="registerContainerBody">
               <h1>Registrate!</h1>
-              <form action="">
+              <form action="" id="registerForm">
                 <label for="userName" >Nombre</label>
-                <input type="text" placeholder="Ingrese su nombre" id="userName">
-                <label for="userLastName" >Apellido</label>
-                <input type="text" placeholder="Ingrese su apellido" id="userLastName">
+                <input type="text" required placeholder="Ingrese su nombre" id="userName">
                 <label for="userEmail" >Correo electónico</label>
-                <input type="email" placeholder="Ingrese su correo electronico" id="userEmail">
+                <input type="email" required placeholder="Ingrese su correo electronico" id="userEmail">
+                <label for="userPassword" >Password</label>
+                <input type="password" required placeholder="Ingrese su Password" id="userPassword">
+
                 <button type="submit">Registrame!</button>
               </form>
               <div class="socialNetworkRegister">
@@ -95,11 +96,35 @@
         </div>
       </div>
       
+    </section>
     </footer>
     
     <!-- END OF FOOTER -->
-   </section>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB1QzpAJQWjL3kIrzbLy6PfOnuNGlnzaWA",
+    authDomain: "beatrice-8a911.firebaseapp.com",
+    projectId: "beatrice-8a911",
+    storageBucket: "beatrice-8a911.appspot.com",
+    messagingSenderId: "319839211268",
+    appId: "1:319839211268:web:024014a17c34b3c3bd8a51"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth()
+
+</script>
    <script src="./assets/js/sidebar.js"></script>
+   <script src="./assets/js/registro.js"></script>
+   
   </body>
 </html>
 
