@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-head {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  text-align: center;
+  justify-content: center;
+}
+
+.main-head h1 {
+  font-size: 4rem;
+}

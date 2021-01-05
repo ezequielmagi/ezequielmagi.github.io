@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="../assets/css/home.css" />
+    <link rel="stylesheet" href="./pages.css" />
     <!-- bootstrap cdn -->
     <link
       rel="stylesheet"
@@ -12,7 +13,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Home</title>
+    <title>Actualizacion Windows 10</title>
   </head>
   <body>
     <!-- nav -->
@@ -33,7 +34,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="../home.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Perfil</a>
@@ -41,14 +44,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#" id="logout">Cerrar Sesion</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a
                 class="nav-link disabled"
                 href="#"
                 tabindex="-1"
                 aria-disabled="true"
                 >Disabled</a
-              >
+              > -->
             </li>
           </ul>
         </div>
@@ -57,82 +60,35 @@
     <!-- fin nav -->
 
     <!-- MAIN -->
-    <div class="container">
-      <div class="cards-container">
-        <div class="card" style="width: 18rem">
-          <img
-            src="./pages/img/actWin10.png"
-            class="card-img-top"
-            alt="actualizacion de windows diez"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Actualizacion de Windows 10: Que hago?</h5>
-            <p class="card-text">
-              Hacemos un repaso de la importancia de actualizar nuestro sistema,
-              como hacerlo y algunos trucos.
-            </p>
-            <a href="./pages/actualizacionwin.html" class="btn btn-primary"
-              >Acceder</a
-            >
-          </div>
+
+    <main>
+      <div class="container">
+
+        <div class="main-head">
+          <h1>Actualizaciones de Windows 10</h1>
+          <h3>¿Qué són? ¿Qué hago?</h3>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+        <div class="main-index">
+          <ul>
+            <li><a href="#whatis">¿Qué son?</a> </li>
+            <li>¿Qué version de Windows tengo?</li>
+            <li>¿Cómo hago para tener mi sistema al día?</li>
+            <li>¿Puedo omitir las actualizaciones?</li>
+          </ul>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+        <div class="main-body">
+          
+          <h1 id="whatis">¿Qué son?</h1>
+          <p>Cuando instalamos un sistema operativo en nuestro equipo, o adquirimos una computadora nueva que ya lo trae instalado, dicho sistema posee las mejores características que el fabricante puede agregarle al momento de su lanzamiento para su óptimo funcionamiento. Lo que suele suceder es que, con el tiempo, y el feedback de los usuarios sumado a los equipos de desarrollo, se descubran fallas en el funcionamiento y seguridad o nuevas ideas para mayor funcionalidad. Estos errores se solucionan, en teoría porque no siempre resulta así, descargando actualizaciones que el fabricante (Microsoft en nuestro caso) pone a disposición de sus clientes de forma gratuita. 
+Existen dos tipos de actualizaciones para nuestro sistema:
+Actualizaciones de características:
+Como su nombre lo indica, estas actualizaciones incluyen mejoras de funcionalidad de las herramientas incluidas o nuevas “features” (características). Estas actualizaciones son estarán disponibles dos veces al año: en primavera y en otoño (boreal).
+Actualizaciones de calidad
+En ingles Quality updates, son pequeños parches de seguridad o actualizaciones en drivers que pueden estar generando inestabilidad en el funcionamiento del equipo. Las actualizaciones de seguridad son importantes para solucionar vulnerabilidades que pueden ser utilizadas por virus para infectar nuestro equipo. En cuanto a las actualizaciones de drivers (el software que se encarga de reconocer y hacer funcionar nuestros periféricos) suelen ser muy puntuales para solucionar problemas de compatibilidad con algún dispositivo. 
+</p>
         </div>
       </div>
-    </div>
+    </main>
 
     <!-- END OF MAIN -->
 
