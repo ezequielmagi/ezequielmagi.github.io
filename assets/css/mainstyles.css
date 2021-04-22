@@ -17,11 +17,6 @@ header {
   height: 10vh;
   display: grid;
   grid-template-columns: 10% 50% 30% 10%;
-
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%; */
 }
 .logo {
   grid-column-start: 2;
@@ -33,8 +28,6 @@ header {
 }
 
 header .header-container ul {
-  /* display: flex;
-  align-items: center; */
   list-style: none;
   display: flex;
   justify-content: right;
@@ -43,7 +36,6 @@ header .header-container ul {
 }
 
 .header-container a {
-  /* color: azure; */
   text-decoration: none;
   margin: 0 12px;
 }
@@ -104,7 +96,6 @@ header .header-container ul {
 }
 
 .hero-title h1 {
-  /* font-size: 4em; */
   font-size: 4vw;
 }
 
@@ -124,7 +115,6 @@ footer {
 }
 
 footer-msg h2 {
-  /* max-width: 35%; */
   font-size: 1.5vw;
   margin: 0;
   padding: 0;
@@ -138,8 +128,6 @@ footer-msg h2 {
 }
 
 .socialLinks a {
-  /* border: 1px solid white; */
-
   padding: 20px 15px;
 }
 
@@ -149,8 +137,6 @@ footer-msg h2 {
 }
 
 footer .socialLinks img {
-  /* height: 50px;
-  width: 50px; */
   height: 3vw;
   width: 3vw;
   color: white;

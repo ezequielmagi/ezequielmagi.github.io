@@ -1,22 +1,39 @@
-const loginForm = document.querySelector('#loginForm')
+const dataLogin = document.getElementById("loginForm");
 
-loginForm.addEventListener('submit', e => {
-    
-    e.preventDefault()
+let userRegistered = JSON.parse(localStorage.getItem("userDB"));
 
-    
-    const loginEmail = document.querySelector('#loginEmail').value
-    const loginPassword = document.querySelector('#loginPassword').value
+const hallaMail = (userEmail, userPass) => {
+  const usuario = userRegistered.find(
+    (usuario) => usuario.userEmail === userEmail
+  );
+  if (usuario === undefined) {
+    alert("Seguro escribiste bien el mail? Vuelve a intentarlo");
+  } else {
+    //ahora hay que corroborar el pass
+    console.log(
+      `el usuario existe y es ${usuario.userEmail} y su pass es ${usuario.userPassword}`
+    );
+    if (usuario.userPassword === userPass) {
+      console.log("excelente! bienvenido usuario");
+      alert("BIENVENIDO");
+    } else {
+      console.log("el pass es incorrecto");
+    }
 
-    console.log(loginEmail, loginPassword)
+    // comparaPass(usuario);
+  }
+  return usuario;
+};
 
-    auth.signInWithEmailAndPassword(loginEmail, loginPassword)
-        
-        .then(
-            // console.log('Usted se ha registrado con exito')
-            window.location.href = "home.html"
+dataLogin.addEventListener("submit", (e) => {
+  event.preventDefault();
 
-        )
+  const userEmail = loginEmail.value;
+  const userPass = loginPassword.value;
 
-       
-})
+  // console.log(userEmail, userPass);
+
+  let hallado = hallaMail(userEmail, userPass);
+  console.log(hallado);
+  console.log(hallado.userPassword);
+});
