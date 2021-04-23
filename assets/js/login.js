@@ -9,18 +9,18 @@ const hallaMail = (userEmail, userPass) => {
   if (usuario === undefined) {
     alert("Seguro escribiste bien el mail? Vuelve a intentarlo");
   } else {
-    //ahora hay que corroborar el pass
     console.log(
       `el usuario existe y es ${usuario.userEmail} y su pass es ${usuario.userPassword}`
     );
+    //ahora hay que corroborar el pass
     if (usuario.userPassword === userPass) {
+      //si coincide el pass ingresado con el almacenado, lo direccionamos a la pantalla principal
       console.log("excelente! bienvenido usuario");
       alert("BIENVENIDO");
+      window.location = "https://ezequielmagi.github.io/home.html";
     } else {
       console.log("el pass es incorrecto");
     }
-
-    // comparaPass(usuario);
   }
   return usuario;
 };
