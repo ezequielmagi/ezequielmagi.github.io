@@ -1,0 +1,135 @@
+/* Declaracion de variables CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --btn-color-1: #f44336;
+  --btn-color-2: #039be5;
+  --btn-color-3: #1bb8c1;
+  --footer-color: #ffa548;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+#indexContainer {
+  /* display: none; */
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+#sidebar {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header h1 {
+  width: 20%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.header-nav {
+  width: 30%;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-nav ul li {
+  list-style: none;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.header-nav ul li a {
+  text-decoration-line: none;
+  font-size: 1.5rem;
+}
+
+#login {
+  background-color: var(--btn-color-2);
+  padding: 15px 20px;
+  border-radius: 25px;
+}
+#register {
+  background-color: var(--btn-color-3);
+  padding: 15px 20px;
+  border-radius: 25px;
+}
+
+/* estilos del main */
+
+main {
+  /* width: 80%; */
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.left-main {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+}
+
+.left-main .hero-title {
+  font-size: 1.7rem;
+}
+
+#comoFunciona {
+  color: aliceblue;
+  background-color: #f44336;
+  font-size: 2rem;
+  padding: 15px 20px;
+  border-radius: 50px;
+}
+
+main img {
+  width: 70%;
+}
+
+/* estilos del footer */
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: var(--footer-color);
+}
+
+.footer-container {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.socialLinks img {
+  width: 4vh;
+}

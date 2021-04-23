@@ -17,7 +17,6 @@ const hallaMail = (userEmail, userPass) => {
       //si coincide el pass ingresado con el almacenado, lo direccionamos a la pantalla principal
       console.log("excelente! bienvenido usuario");
       alert("BIENVENIDO");
-      window.location = "https://ezequielmagi.github.io/home.html";
     } else {
       console.log("el pass es incorrecto");
     }
